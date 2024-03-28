@@ -111,10 +111,11 @@ header > nav {
 .background {
     position: fixed;
     top: 0;
-    left: -700%;
     right: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
+    display: none;
     height: 100vh;
     background-color: rgb(33, 33, 33);
     z-index: 10000;
@@ -136,10 +137,6 @@ header > nav {
     align-items: center;
     margin-top: 250px;
     gap: 20px;
-}
-
-.background.active {
-    left: 0px;
 }
 
 #open {

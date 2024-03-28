@@ -76,11 +76,11 @@ let open_btn = document.getElementById("open")
 let close_btn = document.getElementById('close')
 
 open_btn.addEventListener('click', function() {
-    background.classList.add('active')
+    background.style.display = "block"
 })
 
 close_btn.addEventListener('click', function() {
-    background.classList.remove('active')
+    background.style.display = "none"
 })
 
 object.forEach(objects => {
