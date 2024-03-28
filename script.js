@@ -36,7 +36,7 @@ let object = [
 
     {
         "img": "https://asilmedia.org/uploads/mini/schema/ea/350da2347dc1231f3de4e68e28936b.jpg",
-        "nomi": "o'rgimchak odam 2023",
+        "nomi": "o'rgimchak odam",
         "type": "kinofilm",
         "button": "Tomosha qilish"
     },
