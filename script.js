@@ -75,11 +75,11 @@ let background = document.querySelector('.background')
 let open_btn = document.getElementById("open")
 let close_btn = document.getElementById('close')
 
-open_btn.addEventListener('click', function() {
+open_btn.addEventListener('click', function () {
     background.style.display = "block"
 })
 
-close_btn.addEventListener('click', function() {
+close_btn.addEventListener('click', function () {
     background.style.display = "none"
 })
 
@@ -87,10 +87,12 @@ object.forEach(objects => {
     console.log(objects);
     let card = document.createElement("div")
     card.innerHTML = `
-            <img src="${objects.img}" alt="">
-            <h5>${objects.nomi}</h5>
-            <p>${objects.type}</p>
-            <button>${objects.button}</button>
+    <img src="${objects.img}" alt="">
+            <div class="card__info">
+                <h5>${objects.nomi}</h5>
+                <p>${objects.type}</p>
+                <button>${objects.button}</button>
+            </div>
     `
 
     cards.append(card)

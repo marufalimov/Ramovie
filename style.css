@@ -81,33 +81,6 @@ header > nav {
     gap: 30px;
 }
 
-.card {
-    position: relative;
-    padding: 15px;
-    color: white;
-    overflow: hidden;
-    height: 300px;
-    border-radius: 4px;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.301);
-    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.721), rgba(255, 0, 0, 0));
-    border-radius: 10px;
-    display: flex;  
-    flex-direction: column;
-    gap: 10px;
-}
-
-.card:hover img {
-    transform: scale(1.1);
-}
-
-.card h5 {
-    margin-top: 120px;
-    font-size: 20px;
-    display: block;
-    max-width: 100%;
-    font-weight: 700;
-}
-
 .background {
     position: fixed;
     top: 0;
@@ -147,7 +120,38 @@ header > nav {
     color: white;
 }
 
-.card > img {
+.card__info  button {
+    position: relative;
+    width: 140px;
+    padding: 10px 17px 10px 14px;
+    font-size: 16px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+}
+
+.card__info {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__info > button > i {
+    font-size: 25px;
+}
+
+.card h5 {
+    display: block;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card img {
     width: 100%;
     position: absolute;
     left: 0;
@@ -161,20 +165,22 @@ header > nav {
     bottom: 0;
 }
 
-.card  button {
-    position: relative;
-    width: 140px;
-    padding: 10px 17px 10px 14px;
-    font-size: 16px;
-    background-color: red;
-    border: none;
-    cursor: pointer;
+.card {
+    max-width: 200px;
+    padding: 15px;
     color: white;
+    position: relative;
+    overflow: hidden;
+    height: 350px;
     border-radius: 4px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.301);
+    margin-bottom: 20px;
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.721), rgba(255, 0, 0, 0));
+    border-radius: 10px;
 }
 
-.card > button > i {
-    font-size: 25px;
+.card:hover img {
+    transform: scale(1.1) translateX(10px) translateY(10px);
 }
 
 @media only screen and (max-width: 992px) {
