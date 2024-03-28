@@ -71,6 +71,17 @@ let object = [
 ]
 
 let cards = document.getElementById("cards")
+let background = document.querySelector('.background')
+let open_btn = document.getElementById("open")
+let close_btn = document.getElementById('close')
+
+open_btn.addEventListener('click', function() {
+    background.classList.add('active')
+})
+
+close_btn.addEventListener('click', function() {
+    background.classList.remove('active')
+})
 
 object.forEach(objects => {
     console.log(objects);
